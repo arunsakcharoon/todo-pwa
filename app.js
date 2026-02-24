@@ -124,8 +124,13 @@ function render() {
 // Update the count of active todos
 function updateCount() {
   const active = todos.filter(t => !t.completed).length;
-  document.getElementById('todoCount').textContent = 
+  const completed = todos.filter(t => t.completed).length;
+  const total = todos.length;
+  document.getElementById('todoCount').textContent =
     active === 1 ? '1 item left' : `${active} items left`;
+  document.getElementById('statTotal').textContent = total;
+  document.getElementById('statActive').textContent = active;
+  document.getElementById('statDone').textContent = completed;
 }
 
 // Update status message

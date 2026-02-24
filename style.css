@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #fda085 100%);
   min-height: 100vh;
   padding: 20px;
   color: #333;
@@ -25,10 +25,39 @@ body {
 }
 
 header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #6c63ff 0%, #e040fb 100%);
   color: white;
   padding: 30px 20px;
   text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.stat {
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.stat-total {
+  background: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.stat-active {
+  background: #43e97b;
+  color: #1a5c35;
+}
+
+.stat-done {
+  background: #f9ca24;
+  color: #7d5a00;
 }
 
 header h1 {
@@ -59,22 +88,23 @@ header h1 {
 
 #todoInput:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #6c63ff;
 }
 
 .input-section button {
   padding: 12px 25px;
-  background: #4CAF50;
+  background: #6c63ff;
   color: white;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .input-section button:hover {
-  background: #45a049;
+  background: #574fd6;
 }
 
 .filter-buttons {
@@ -96,13 +126,13 @@ header h1 {
 }
 
 .filter-btn.active {
-  background: #667eea;
+  background: #6c63ff;
   color: white;
-  border-color: #667eea;
+  border-color: #6c63ff;
 }
 
 .filter-btn:hover {
-  border-color: #667eea;
+  border-color: #6c63ff;
 }
 
 .todo-list {
@@ -134,7 +164,7 @@ header h1 {
   height: 24px;
   margin-right: 15px;
   cursor: pointer;
-  accent-color: #4CAF50;
+  accent-color: #6c63ff;
 }
 
 .todo-text {
