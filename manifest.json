@@ -2,7 +2,7 @@
   "name": "Todo PWA App",
   "short_name": "Todos",
   "description": "A simple, offline-capable todo list app",
-  "start_url": "/",
+  "start_url": "https://todo-pwa-gamma.vercel.app/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4CAF50",
